@@ -29,10 +29,10 @@ export const Statistics = ({good,neutral,bad,total,positivePercentage}) => {
   );
 };
 
-Statistics.prototype = {
+Statistics.propTypes = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,
   total: PropTypes.number,
-  positive: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  positivePercentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
